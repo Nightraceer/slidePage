@@ -1,0 +1,56 @@
+.sp-overflow-hidden {
+    overflow: hidden;
+}
+
+.sp-dots-list {
+    position: fixed;
+    z-index: 999;
+    left: 20px;
+    top: 50%;
+}
+
+.sp-fixed-mode .sp-conveyor {
+    height: 100vh;
+}
+
+.sp-fixed-mode [data-section] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateY(101%);
+    -moz-transform: translateY(101%);
+    -ms-transform: translateY(101%);
+    -o-transform: translateY(101%);
+    transform: translateY(101%);
+    z-index: 998;
+}
+
+.sp-fixed-mode [data-section].sp-section-bottom {
+    top: auto;
+}
+
+.sp-fixed-mode [data-section]:first-child {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.sp-fixed-mode .sp-move-down {
+    -webkit-transform: translateY(101%)!important;
+    -moz-transform: translateY(101%)!important;
+    -ms-transform: translateY(101%)!important;
+    -o-transform: translateY(101%)!important;
+    transform: translateY(101%)!important;
+}
+
+.sp-fixed-mode .sp-move-up {
+    -webkit-transform: translateY(0)!important;
+    -moz-transform: translateY(0)!important;
+    -ms-transform: translateY(0)!important;
+    -o-transform: translateY(0)!important;
+    transform: translateY(0)!important;
+}
